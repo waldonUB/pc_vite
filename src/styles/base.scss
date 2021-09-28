@@ -1,0 +1,56 @@
+@import './reset.scss';
+@import './normalize.scss';
+@import './utils.scss';
+@import './project-custom.scss';
+@import './element-ui.scss';
+@import './tanshu-style.scss';
+@import './faicomponent.scss';
+
+html {
+  overflow-y: hidden;
+}
+
+body {
+  font-family: 'MicrosoftYaHei', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: $background-color;
+  transform: translate3d(0, 0, 0);
+}
+
+a {
+  font-size: 14px;
+  font-weight: 400;
+  color: $primary-color;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+img {
+  vertical-align: middle;
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+p {
+  word-wrap: break-word;
+}
+textarea {
+  padding: 14px 12px;
+  font-size: 14px;
+  color: #606266;
+  word-break: break-word;
+  white-space: break-spaces;
+  border: 1px solid #eeeeee;
+  outline: none;
+  box-sizing: border-box;
+  &:hover {
+    border: 1px solid $primary-color !important;
+  }
+  &:focus {
+    border: 1px solid $primary-color !important;
+  }
+}

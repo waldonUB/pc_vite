@@ -1,0 +1,107 @@
+/* 元素隐藏 */
+.hide {
+  display: none;
+}
+
+/* 清除浮动 */
+.clearfix {
+  zoom: 1;
+  &::after {
+    clear: both;
+  }
+}
+.clearfix::before,
+.clearfix::after {
+  display: table;
+  content: '';
+}
+
+/* flex */
+.flex {
+  display: flex;
+}
+.flexBox {
+  display: flex;
+  flex: 1;
+}
+// 子元素-平均分栏
+.flex1 {
+  width: 20%;
+  flex: 1;
+}
+// 位置不够时也不拉伸缩小
+.flexItem {
+  flex: none;
+}
+// 父元素-横向排列（主轴）
+.flex-h {
+  display: flex;
+  flex-direction: row;
+}
+// 父元素-横向换行
+.flex-hw {
+  flex-wrap: wrap;
+}
+// 父元素-水平居中（主轴是横向才生效）
+.flex-hc {
+  justify-content: center;
+}
+.justify-content_space-around {
+  justify-content: space-around;
+}
+.justify-content_flex-justify {
+  justify-content: space-between;
+}
+// 父元素-纵向排列（主轴）
+.flex-v {
+  display: flex;
+  flex-direction: column;
+}
+// 父元素-纵向换行
+.flex-vw {
+  flex-wrap: wrap;
+}
+// 父元素-竖直居中（主轴是横向才生效）
+.flex-vc {
+  align-items: center;
+}
+
+/* width: 100%; */
+.width_full {
+  width: 100%;
+}
+.width_full-max {
+  width: 100% !important;
+}
+
+/* min-width: 140px; */
+.min_width_140 {
+  min-width: 140px;
+}
+.min_width_88 {
+  min-width: 88px;
+}
+
+/* display-block */
+.display-block {
+  display: block;
+}
+
+/* margin-right */
+.mr4 {
+  margin-right: 4px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+
+/* .multiTextEllipsis */
+.multiTextEllipsis {
+  @include line-clamp(2);
+}
+
+.tanshu-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

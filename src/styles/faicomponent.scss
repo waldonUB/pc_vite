@@ -1,0 +1,180 @@
+/* 按钮 */
+
+// 24 32 40
+
+/* END 按钮 */
+
+/* 弹窗 */
+
+/* END 弹窗 */
+
+/* Input */
+.fa-input-show-count::after {
+  height: 19px;
+  line-height: 19px;
+  background-color: transparent;
+}
+.fill-show-count {
+  .fa-input-show-count {
+    width: 100%;
+  }
+}
+
+/* END Input */
+
+/* popover组件 start */
+.ts-fa-popover {
+  /* 解决被顶部和左边导航栏覆盖的问题 */
+  z-index: 2000;
+}
+
+/* 这个镂空的箭头不好看，统一去掉然后调小间距 */
+.ts-fa-popover.no-arrow .fa-popover-arrow {
+  opacity: 0;
+}
+.ts-fa-popover.no-arrow.fa-popover-placement-left,
+.ts-fa-popover.no-arrow.fa-popover-placement-leftTop,
+.ts-fa-popover.no-arrow.fa-popover-placement-leftBottom {
+  padding-right: 4px;
+}
+.ts-fa-popover.no-arrow.fa-popover-placement-right,
+.ts-fa-popover.no-arrow.fa-popover-placement-rightTop,
+.ts-fa-popover.no-arrow.fa-popover-placement-rightBottom {
+  padding-left: 4px;
+}
+.ts-fa-popover.no-arrow.fa-popover-placement-bottom,
+.ts-fa-popover.no-arrow.fa-popover-placement-bottomLeft,
+.ts-fa-popover.no-arrow.fa-popover-placement-bottomRight {
+  padding-top: 4px;
+}
+.ts-fa-popover.no-arrow.fa-popover-placement-top,
+.ts-fa-popover.no-arrow.fa-popover-placement-topLeft,
+.ts-fa-popover.no-arrow.fa-popover-placement-topRight {
+  padding-bottom: 4px;
+}
+
+/* 缩小三角，去掉镂空 */
+.ts-fa-popover .fa-popover-arrow {
+  box-sizing: border-box;
+}
+
+/* popover组件 end */
+
+/* 统一修改步骤条对照设计稿 */
+.tsSteps .fa-steps-item-icon {
+  box-sizing: border-box;
+}
+.tsSteps .fa-steps-label-vertical .fa-steps-item-tail {
+  margin-left: 50px;
+}
+.tsSteps .fa-steps-item-tail::after {
+  height: 2px;
+}
+
+/* 统一修改步骤条对照设计稿 end */
+
+/* Form */
+.fa-form-item-control.has-error {
+  .tanshu-selectList .tagBox,
+  .tshu_select .tshu_select_input .motivate,
+  .el-date-editor .el-input__inner {
+    border: 1px solid #ff4d4d;
+  }
+}
+
+/* Form end */
+
+/* .tsFaiImgUpload-little start */
+.tsFaiImgUpload-little .fa-upload,
+.tsFaiImgUpload-little .fa-upload-list-picture-card-container,
+.tsFaiImgUpload-little .fa-upload-list-picture-card .fa-upload-list-item {
+  width: 64px;
+  height: 64px;
+}
+
+/* .tsFaiImgUpload-little end */
+
+/* .tsFaiImgUpload start */
+.tsFaiImgUpload-mini .fa-upload,
+.tsFaiImgUpload-mini .fa-upload-list-picture-card-container,
+.tsFaiImgUpload-mini .fa-upload-list-picture-card .fa-upload-list-item {
+  width: 80px;
+  height: 80px;
+}
+
+.tsFaiImgUpload-medium .fa-upload,
+.tsFaiImgUpload-medium .fa-upload-list-picture-card-container,
+.tsFaiImgUpload-medium .fa-upload-list-picture-card .fa-upload-list-item {
+  width: 125px;
+  height: 125px;
+}
+
+.tsFaiImgUpload-large .fa-upload,
+.tsFaiImgUpload-large .fa-upload-list-picture-card-container,
+.tsFaiImgUpload-large .fa-upload-list-picture-card .fa-upload-list-item {
+  width: 140px;
+  height: 140px;
+}
+
+/* .tsFaiImgUpload end */
+
+/* 二维码的qr-popover组件 start */
+.qr-popover.el-popover {
+  padding: 0;
+  .qr-wrapper {
+    display: flex;
+    width: 264px;
+    height: 351px;
+    padding: 24px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(2, 5, 31, 0.1);
+    box-sizing: border-box;
+    flex-direction: column;
+    .fa-tabs-bar {
+      border-bottom: none;
+    }
+    .fa-tabs-nav-scroll {
+      display: flex;
+      justify-content: center;
+    }
+    .fa-tabs-nav {
+      .fa-tabs-tab {
+        padding-top: 0;
+      }
+    }
+    .imgBox {
+      width: 160px;
+      height: 160px;
+      margin: 0 auto;
+      flex: 0 0 auto;
+      .imgContent {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .tip {
+      margin-top: 8px;
+      text-align: center;
+    }
+    .operate-box {
+      display: flex;
+      margin-top: 24px;
+      justify-content: center;
+      .left-btn {
+        margin-right: 8px;
+      }
+    }
+  }
+  .fa-popover-inner-content {
+    padding: 0;
+  }
+}
+
+/* 二维码的qr-popover组件 end */
+
+/* Select */
+.fa-select-lg {
+  font-size: 14px;
+}
+
+/* Select end */

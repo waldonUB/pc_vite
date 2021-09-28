@@ -1,0 +1,27 @@
+.fa-radio-wrapper {
+  margin-right: 22px !important;
+
+  .fa-radio {
+    &:hover {
+      .fa-radio-inner {
+        border-color: $border-color;
+      }
+    }
+  }
+
+  .fa-radio-inner {
+    width: 18px;
+    height: 18px;
+
+    &::after {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .fa-radio-checked {
+    .fa-radio-inner {
+      border-color: $border-color;
+    }
+  }
+}

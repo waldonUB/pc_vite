@@ -1,0 +1,252 @@
+/* 探鼠项目的提示框自定义样式 */
+.tShuIconAll {
+  &.el-message {
+    min-width: 0;
+    padding: 14px;
+    background: #ffffff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+    .el-message__icon {
+      margin-right: 8px;
+      font-size: 16px;
+      &.success {
+        color: $primary-color;
+      }
+      &.warning {
+        color: #ffbc48;
+      }
+      &.error {
+        color: $error-color;
+      }
+    }
+    .el-message__content {
+      line-height: 24px;
+      color: $color-53;
+    }
+  }
+}
+.tShuIconAllneedHigherVersion {
+  z-index: 6668 !important;
+
+  /* 比成功的提示要高 */
+  &.tsTopTip {
+    &.el-message {
+      min-width: 100px;
+      padding: 15px 20px;
+      background: $color-ff;
+    }
+  }
+  a {
+    color: #247af3;
+    text-decoration: underline;
+  }
+  .el-icon-info {
+    display: none;
+  }
+}
+
+/* 探鼠项目的提示框自定义样式结束 */
+
+/* 表格样式 */
+.el-table thead th,
+.el-table thead tr {
+  background: #fafafa;
+}
+.el-table th,
+.el-table tr {
+  background: #ffffff;
+}
+
+body .el-table td,
+body .el-table th {
+  text-align: center;
+}
+.el-table .cell,
+.el-table th div,
+.el-table--border td:first-child .cell,
+.el-table--border th:first-child .cell {
+  padding: 0 6px !important; /* turbo 加载时机不对，element 自己的样式后加载所以要加上 important 去覆盖 */
+}
+.el-table .ascending .sort-caret.ascending {
+  border-bottom-color: #000000;
+}
+
+.el-table .descending .sort-caret.descending {
+  border-top-color: #000000;
+}
+
+/* END 表格样式 */
+
+/* tooltip */
+.el-tooltip {
+  cursor: pointer;
+}
+
+/* END tooltip */
+
+/* Input */
+#app .el-input__inner {
+  padding: 0 10px;
+  margin-right: 10px;
+  &:not([disabled]):hover {
+    border: 1px solid #247af3 !important;
+  }
+}
+#app .el-input--prefix .el-input__inner {
+  padding-left: 30px;
+}
+
+/* END Input */
+
+/* Date */
+#app .el-range-editor--small,
+.fa-modal-root .el-range-editor--small.el-input__inner {
+  height: 34px;
+}
+
+#app .el-date-editor--daterange {
+  width: 240px;
+}
+
+#app .el-range-separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app .el-range-editor--small .el-range-input {
+  font-size: 12px;
+}
+#app .el-date-editor .el-range-input {
+  cursor: pointer;
+}
+#app .el-date-editor .el-range__icon,
+.el-date-editor .el-range__close-icon {
+  line-height: 32px;
+  cursor: pointer;
+}
+
+/* END Date */
+
+/* message-box */
+.el-message-box__wrapper {
+  .el-message-box {
+    position: relative;
+    width: 320px;
+    padding: 0;
+    box-sizing: border-box;
+    .el-message-box__header {
+      position: static;
+      padding-top: 31px;
+      padding-bottom: 11px;
+      color: $color-00;
+      .el-message-box__headerbtn {
+        top: 10px;
+        right: 10px;
+        z-index: 99;
+        width: 11px;
+        height: 11px;
+        i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .el-message-box__title {
+        font-weight: 400;
+        color: #000000;
+        text-align: center;
+      }
+    }
+    .el-message-box__content {
+      padding: 0 30px 20px 30px;
+      letter-spacing: 0.02em;
+      text-align: center;
+    }
+    .el-message-box__btns {
+      bottom: 0;
+      display: flex;
+      width: 100%;
+      height: 64px;
+      padding: 14px 55px;
+      margin: 0 auto;
+      overflow: hidden;
+      text-align: center;
+      border-top: 1px solid #eeeeee;
+      box-sizing: border-box;
+      justify-content: center;
+      flex-direction: row-reverse;
+      .el-button {
+        float: right;
+        width: 100px;
+        height: 34px;
+        padding: 0;
+        font-size: 14px;
+        line-height: 34px;
+        color: $color-53;
+        background: rgba(67, 129, 253, 0);
+        border: 1px solid $border-color;
+        border-radius: 4px;
+        box-sizing: border-box;
+        &:nth-of-type(2) {
+          margin-right: 10px !important;
+        }
+        &:hover {
+          background: rgba(247, 247, 247, 1);
+        }
+        &.el-button--primary {
+          float: left;
+          margin: 0;
+          color: #ffffff;
+          background: #247af3;
+          border: none;
+          &:hover {
+            background: #206dda;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* END message-box */
+
+/* Image */
+#app .el-image__inner {
+  width: auto;
+  height: auto;
+}
+
+/* END Image */
+
+/* Popover */
+.el-popover {
+  &.more-opt-popover {
+    z-index: $zindex-dialog - 10 !important; /* turbo 因为 dialog 的 z-index 为1000，所以 popover 的层级要低于 dialog 的 1000 */
+    min-width: 0;
+    padding: 12px 0;
+
+    .popover-item {
+      width: 100%;
+      height: 36px;
+      padding: 0 35px;
+      line-height: 36px;
+      color: $color-53;
+      text-align: center;
+      cursor: pointer;
+      box-sizing: border-box;
+
+      &:hover {
+        background-color: $color-f7;
+      }
+
+      &.disabled {
+        cursor: not-allowed;
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+/* END Popover */

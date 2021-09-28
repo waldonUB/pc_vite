@@ -1,0 +1,143 @@
+/**
+ * tanshu 公用工具类
+ * tips: 后续改为使用fa-component组件库
+ */
+
+/* origin: 封装的select组件样式 */
+input[type='radio'] {
+  display: none;
+  & + label {
+    position: relative;
+    display: inline-block;
+    float: none;
+    padding-left: 25px;
+    margin-right: 30px;
+    overflow: visible;
+    font-size: 14px;
+    color: $color-53;
+    white-space: nowrap;
+    cursor: pointer;
+    box-sizing: border-box;
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      margin: auto;
+      border: solid 1px #dadada;
+      border-radius: 100%;
+      content: '';
+    }
+  }
+}
+input[type='radio']:disabled {
+  & + label {
+    &::before {
+      background-color: #e5e5e5;
+    }
+  }
+}
+input[type='radio']:checked {
+  & + label {
+    &::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 4px;
+      width: 10px;
+      height: 10px;
+      margin: auto;
+      background-color: $primary-color;
+      border-radius: 100%;
+      content: '';
+    }
+  }
+}
+
+/* END 封装的select组件样式 */
+
+/* origin: 自定义radio样式 */
+input[type='checkbox'] {
+  display: none;
+  & + label {
+    position: relative;
+    display: inline-block;
+    float: none;
+    padding-left: 20px;
+    margin-right: 30px;
+    overflow: visible;
+
+    /* vertical-align: middle; */
+    font-size: 14px;
+    color: $color-53;
+    white-space: nowrap;
+    cursor: pointer;
+    box-sizing: border-box;
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      margin: auto;
+      border: 1px solid rgba(218, 218, 218, 1);
+      border-color: #dadada;
+      border-radius: 4px;
+      content: '';
+    }
+  }
+}
+input[type='checkbox']:disabled {
+  & + label {
+    &::before {
+      background-color: #e5e5e5;
+    }
+  }
+}
+input[type='checkbox']:checked {
+  & + label {
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 4px;
+      width: 10px;
+      height: 8px;
+      background: url('~@/assets//image/comm/direct/checkBox.png') no-repeat;
+      background-size: 100% 100%;
+      content: '';
+      transform: translate(0%, -50%);
+    }
+  }
+}
+.directSale {
+  input[type='checkbox']:checked {
+    & + label {
+      &::after {
+        background: url('~@/assets/image/comm/direct/checkBox.png') no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
+
+/* END 自定义radio样式 */
+
+/* 气泡弹窗 */
+.bubbleBox {
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #535353;
+}
+
+/* 气泡弹窗 */
+
+/* Utils start */
+
+.fitBox {
+  width: 100%;
+}
+
+/* Utils end */

@@ -1,0 +1,156 @@
+.ts-detail-dialog {
+  .dialog-content {
+    margin-top: 20px;
+  }
+
+  .base-info {
+    padding: 0 20px;
+  }
+
+  .base-content {
+    @include flex-left;
+
+    ::v-deep .imgContent {
+      width: 48px;
+      height: 48px;
+    }
+
+    .name-box {
+      margin-left: 8px;
+      line-height: 16px;
+      color: $color-53;
+    }
+
+    .contacts {
+      @include flex-center;
+
+      font-weight: bold;
+
+      .assist-icon {
+        @include flex-center;
+
+        width: 16px;
+        height: 16px;
+        margin-left: 6px;
+        font-size: 12px;
+        font-weight: normal;
+        color: $color-ff;
+        background-color: $primary-color;
+      }
+    }
+
+    .wxname {
+      margin-top: 8px;
+    }
+  }
+
+  .button-box {
+    @include flex-right;
+
+    flex: 1;
+  }
+
+  .base-detail {
+    @include flex-left;
+
+    margin: 16px 0 20px;
+    text-align: center;
+
+    .detail-select {
+      width: 60px;
+      height: 25px;
+      margin-top: 3px;
+
+      ::v-deep {
+        .tshu_select_input {
+          height: 25px;
+        }
+
+        .motivate {
+          height: 25px;
+          line-height: 23px;
+        }
+      }
+    }
+  }
+
+  .detail-wrapper {
+    margin-right: 32px;
+
+    .label {
+      color: $color-b2;
+    }
+
+    .value {
+      @include ellipsis;
+
+      &.text_but1 {
+        color: $primary-color;
+      }
+
+      max-width: 10em;
+      margin-top: 8px;
+      line-height: 20px;
+      color: $color-53;
+    }
+  }
+
+  .slider-box {
+    @include flex-left;
+
+    height: 37px;
+    padding-left: 20px;
+    background-color: $color-f7;
+  }
+
+  .slider-item {
+    width: 76px;
+    height: 32px;
+    margin-top: auto;
+    font-size: 14px;
+    line-height: 32px;
+    color: $color-53;
+    text-align: center;
+    cursor: pointer;
+
+    &.active {
+      background-color: $color-ff;
+    }
+  }
+
+  .container {
+    height: 418px;
+    overflow: auto;
+  }
+
+  .operate-box {
+    @include flex-between;
+
+    height: 44px;
+    padding: 0 20px;
+
+    .button {
+      &.disabled {
+        cursor: not-allowed;
+      }
+    }
+
+    .global-button {
+      width: 24px;
+      height: 24px;
+      padding: 0 5px;
+      background-color: $primary-color-bg;
+      border-color: $primary-color;
+
+      &.disabled {
+        background-color: $color-f7;
+        border-color: $color-f7;
+      }
+    }
+
+    .ts-svg-icon {
+      margin-right: 0;
+      vertical-align: 0;
+    }
+  }
+}

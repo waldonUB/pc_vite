@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" session="false" %>
+<%@ page import="fai.web.*" %>
+<!DOCTYPE html>
+html(lang="zh-CN", xml:lang="zh-CN")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width,initial-scale=1")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="renderer", content="webkit")
+    meta(name="referrer", content="always")
+    <%=FrontEndDef.getHeaderComponentCss("header_1_1")%>
+  body
+    div#app
+    <%@ include file="./inc/foot.jsp.inc" %>
+    <%=FrontEndDef.getHeaderComponentScript("header_1_1")%>

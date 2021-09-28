@@ -1,0 +1,14 @@
+.fa-input {
+  height: 34px;
+  color: $color-53;
+
+  &:hover,
+  &:focus {
+    border-color: $primary-color;
+  }
+
+  &.fa-input-lg {
+    height: 40px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,23 @@
+# .stylelintignore
+
+test/
+dist/
+ver2/
+node_modules/
+src/styles/element-variables.scss
+src/styles/__element-variables.scss
+src/styles/variables.scss
+src/styles/normalize.scss
+src/styles/element-theme/**/*
+public/**/*
+
+# 其他类型文件
+
+*.min.css
+*.js
+*.jpg
+*.png
+*.eot
+*.ttf
+*.woff
+*.json
